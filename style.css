@@ -1,0 +1,106 @@
+body {
+  font-size: arial, sans-serif;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 500px !important;
+  /* background-color: #414141; */
+  padding: 20px;
+}
+
+.main {
+  border: 20px solid #414141;
+  border-radius: 4px;
+  /* background-color: 414141; */
+}
+
+.header {
+  background-color: #414141;
+  color: rgb(228, 212, 212);
+  /* border-radius: 4px; */
+  height: 50px;
+}
+
+.col {
+  width: 200px;
+  color: rgb(228, 212, 212);
+}
+
+.city {
+  font-size: 45px;
+}
+
+.section-1 {
+  background-color: #9b4710;
+  padding: 20px;
+}
+
+li {
+  list-style: none;
+  font-weight: 100px;
+  color: rgb(228, 212, 212);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
+button {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+.temperature {
+  font-size: 50px;
+  /* margin-bottom: 40px; */
+  color: rgb(228, 212, 212);
+  position: relative;
+  top: 15px;
+  left: 5px;
+}
+
+.center {
+  position: relative;
+  top: 15px;
+}
+.input {
+  margin-top: 60px;
+  height: 50px;
+}
+
+.input-search {
+  background: #f9f7fe;
+  border: none;
+  font-size: 16px;
+  line-height: 30px;
+  color: white;
+  background-color: #414141;
+}
+
+.input-text {
+  background: #f9f7fe;
+  border: none;
+  padding: 15px 20px;
+  display: inline-block;
+  border-radius: 6px;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  height: 50px;
+  line-height: 20px;
+  display: inline-block;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.temperature-main .units {
+  position: relative;
+  top: -15px;
+  color: rgb(228, 212, 212);
+}

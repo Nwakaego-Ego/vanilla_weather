@@ -4,7 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Vanilla Weather</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="header">
+          <div class="row">
+            <!-- <div class="col"><img src="......." alt="logo" /></div> -->
+            <div class="col" id="weather-update">Weather Update</div>
+            <div class="col" id="date">Friday 16 : 27</div>
+          </div>
+        </div>
+        <div class="section-1">
+          <ul>
+            <li class="city" id="city"></li>
+          </ul>
+          <div class="temperature-main">
+            <img src="" alt="sunny" class="temperature-img" id="ïcon" />
+            <span id="temperature" class="temperature">29</span
+            ><span class="units"> °C / °F</span>
+          </div>
+          <div class="center">
+            <ul>
+              <li class="humidity">Humidity: <span id="humidity"></span> %</li>
+              <li class="wind">Wind : <span id="wind"> </span> km/h</li>
+              <li class="weather-state" id="description">Partly Cloudy</li>
+            </ul>
+          </div>
+          <form id="form">
+            <div class="input">
+              <input
+                type="text"
+                placeholder="Type a city"
+                id="cityInput"
+                class="input-text"
+                autocomplete="off"
+              />
+              <button id="search" class="input-search" type="submit">
+                Search
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
