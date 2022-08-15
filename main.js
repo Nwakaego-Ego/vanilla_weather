@@ -32,11 +32,17 @@ form.addEventListener("submit", searchButton);
 function searchButton(event) {
   event.preventDefault();
 
-  axios.get(apiUrl).then(weather);
+  citySearch(cityInput.value);
 }
 
-let apiKey = "0af0ba164e313d2bc52c846cbc253f06";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Lagos&appid=${apiKey}&units=metric`;
+function citySearch(city) {
+  let cityInput = document.getElementById("cityInput");
+  let cityNow = (document.getElementById("city").innerHTML = cityInput.value);
+  let apiKey = "0af0ba164e313d2bc52c846cbc253f06";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(weather);
+}
 
 function weather(response) {
   console.log(response);
@@ -66,3 +72,5 @@ function weather(response) {
   );
   icon.innerHTML = ("alt", response.data.weather[0].description);
 }
+
+citySearch("Lagos");
